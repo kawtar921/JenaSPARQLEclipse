@@ -1,0 +1,22 @@
+@prefix ns: <http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+@include <OWL>.
+
+[rule0: (?a ns:estFilsDe ?b) ->(?a ns:estEnfantDe ?b)]
+[rule1: (?a ns:estFilleDe ?b) ->(?a ns:estEnfantDe ?b)]
+[rule2: (?a ns:estEnfantDe ?b) -> (?b ns:estParentDe ?a)]
+[rule3: (?a ns:estParentDe ?b) (?a rdf:type ns:Homme) -> (?a ns:estPereDe ?b)] 
+[rule4: (?a ns:estParentDe ?b) (?a rdf:type ns:Femme) -> (?a ns:estMereDe ?b)]
+[rule5: (?a ns:estEnfantDe ?b) (?c ns:estEnfantDe ?b) notEqual(?a,?c) (?a rdf:type ns:Homme) -> (?a ns:estFrereDe ?c)]
+[rule6: (?a ns:estEnfantDe ?b) (?c ns:estEnfantDe ?b) notEqual(?a,?c) (?a rdf:type ns:Femme) -> (?a ns:estSoeurDe ?c)]
+[rule7: (?a ns:estParentDe ?b) (?c ns:estFrereDe ?a) -> (?c rdf:type ns:Oncle)]
+[rule8: (?a ns:estParentDe ?b) (?c ns:estMereDe ?a) -> (?c rdf:type ns:GrandMere)]
+[rule9: (?a ns:estParentDe ?b) (?c ns:estPereDe ?a) -> (?c rdf:type ns:GrandPere)]
+[rule10: (?a ns:estFilleDe ?b) (?b ns:se_marier_avec ?c) -> (?a ns:estFilleDe ?c)]
+[rule11: (?a ns:estFilsDe ?b) (?b ns:se_marier_avec ?c) -> (?a ns:estFilsDe ?c)]
+[rule12: (?a ns:estParentDe ?b) (?a ns:se_marier_avec ?c) -> (?c ns:estParentDe ?b)]
+
+
+
+

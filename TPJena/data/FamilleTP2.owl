@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnRelationDeFraterieAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnRelationDeFraterieAvec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnfantDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnfantDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilleDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilleDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilsDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilsDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFrereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFrereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnRelationDeFraterieAvec"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estMereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estMereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estParentDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estParentDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estPereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estPereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estSoeurDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estSoeurDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estEnRelationDeFraterieAvec"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#se_marier_avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#se_marier_avec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#nationalite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#nationalite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#nom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fille">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilleDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Enfant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fils">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFilsDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Enfant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fraterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fraterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Frere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Frere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFrereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fraterie"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Soeur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#GrandParent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#GrandParent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Grandmere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Grandmere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estMereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#GrandParent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Grandpere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Grandpere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Grandpere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estPereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#GrandParent"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Jeune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Jeune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Mere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Mere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estMereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Pere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Oncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Oncle">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estFrereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Pere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Pere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estPereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Parent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#PersonneAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#PersonneAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Soeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Soeur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#estSoeurDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Fraterie"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <untitled-ontology-3:se_marier_avec rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Thomas"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Alex</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Chloe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Chloe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <untitled-ontology-3:estFilleDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Marie"/>
+        <untitled-ontology-3:estFilleDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Chloe</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Claude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Claude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <untitled-ontology-3:estFilleDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Sylvie"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Française</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>Claude</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Jean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Jean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#John"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Anglaise</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>Jean</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Anglaise</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>John</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Marie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Marie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Française</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>Marie</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Micheal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Micheal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Alex"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Thomas"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Micheal</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Paul</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:se_marier_avec rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Marie"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Française</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>Peter</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Sylvie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Sylvie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Femme"/>
+        <untitled-ontology-3:estFilleDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Marie"/>
+        <untitled-ontology-3:estFilleDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter"/>
+        <untitled-ontology-3:se_marier_avec rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#John"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Sylvie</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Peter"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</untitled-ontology-3:age>
+        <untitled-ontology-3:nationalite>Française</untitled-ontology-3:nationalite>
+        <untitled-ontology-3:nom>Thomas</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Homme"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Alex"/>
+        <untitled-ontology-3:estFilsDe rdf:resource="http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#Thomas"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-3:age>
+        <untitled-ontology-3:nom>Tom</untitled-ontology-3:nom>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

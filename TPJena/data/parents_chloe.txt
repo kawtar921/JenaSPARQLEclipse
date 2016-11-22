@@ -1,0 +1,9 @@
+PREFIX ns: <http://www.semanticweb.org/abdelhadikawtar/ontologies/2016/10/untitled-ontology-3#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?user ?parents
+WHERE {
+    ?parents ns:estParentDe ?user.
+    ?user ns:nom "Chloe"
+}
